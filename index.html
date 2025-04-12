@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>花音サイトウの自己紹介</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/kanon.jpg" alt="花音サイトウのイメージ" />
+    <h1>こんにちは、花音サイトウです！</h1>
+    <p>やさしくて、ちょっと不思議な毎日を綴ります。</p>
+    <nav>
+      <ul>
+        <li><a href="#about">自己紹介</a></li>
+        <li><a href="#hobby">最近ハマってること</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+        <li><a href="index_en.html">EN</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>自己紹介</h2>
+      <p>名前：花音（かのん）サイトウ</p>
+      <p>好きなこと：本を読むこと、かわいい服、季節の花</p>
+      <p>今の目標：みんなと仲良くなること！</p>
+    </section>
+    <section id="hobby" class="alt">
+      <h2>最近ハマってること</h2>
+      <p>・のんびりできるカフェめぐり</p>
+      <p>・やさしいアニメを観ること</p>
+      <p>・毎日のちいさな幸せを見つけること</p>
+    </section>
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">お名前：</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">メールアドレス：</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="message">メッセージ：</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+        <button type="submit">送信</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 花音サイトウ</p>
+  </footer>
+</body>
+</html>
