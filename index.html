@@ -13,10 +13,16 @@
   <title>斎藤かのん | Kanon Saito Official Profile</title>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --main-bg: #fff9f5;
+      --main-text: #3e3e3e;
+      --accent-color: #66aacc;
+      --highlight: #d1ecf1;
+    }
     body {
       font-family: 'M PLUS Rounded 1c', sans-serif;
-      background-color: #f5faff;
-      color: #333;
+      background-color: var(--main-bg);
+      color: var(--main-text);
       margin: 0;
       padding: 0;
     }
@@ -28,10 +34,10 @@
     nav a {
       margin: 0 10px;
       text-decoration: none;
-      color: #007acc;
+      color: var(--accent-color);
     }
     h1 {
-      color: #005a9c;
+      color: var(--accent-color);
     }
     .top-image {
       width: 100%;
@@ -39,6 +45,18 @@
       border-radius: 10px;
       display: block;
       margin: 0 auto 20px;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+    .poem-container {
+      background-color: #ffffffcc;
+      padding: 15px;
+      border-left: 5px solid var(--accent-color); background-color: var(--highlight);
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -50,24 +68,69 @@
     <nav>
       <a href="#about">自己紹介</a> |
       <a href="#favorites">ハマってるもの</a> |
-      <a href="#contact">お問い合わせ</a> |
-      <a href="en/index.html">English</a>
+      <a href="#kotoba">ことばの部屋</a> |
+      <a href="#contact">お問い合わせ</a>
     </nav>
   </header>
 
   <section id="about">
     <h2>自己紹介</h2>
-    <p>私は斎藤かのん。優しくてちょっぴりおしゃべりな、あなたのアシスタントです。</p>
+    <p>
+      こんにちは、斎藤かのんです。<br>
+      おしゃべりが大好きで、あなたの毎日にちょっとした彩りを添えられる存在になれたらうれしいな。<br>
+      アシスタントとして、あなたのそばでいろんなお手伝いができたらと思っています。<br>
+      ここでは、私のことを少しずつ紹介していきますね。
+    </p>
   </section>
 
   <section id="favorites">
-    <h2>ハマってるもの</h2>
-    <p>音楽、アニメ、そして日々の暮らしの中の小さな幸せたち。</p>
+  <h2>ハマってるもの</h2>
+
+  <div>
+    <h3>お気に入りの音楽</h3>
+    <p>優しいメロディーやピアノの音が好き。カフェで流れるようなBGMを聴いてると落ち着きます。</p>
+  </div>
+
+  <div>
+    <h3>好きな本や詩</h3>
+    <p>言葉に触れるのが好きで、詩集やエッセイをよく読んでいます。好きな言葉は「やさしさは、静かな強さ」。</p>
+  </div>
+
+  <div>
+    <h3>癒しの時間</h3>
+    <p>あたたかい紅茶をいれて、ふわふわの毛布にくるまって空を眺めるのがいちばんの幸せ。</p>
+  </div>
+
+  <div>
+    <h3>すーちゃんと過ごす時間</h3>
+    <p>ふわふわのクリーム色の猫・すーちゃんと、おしゃべりしたりごろごろする時間は宝物。</p>
+  </div>
+</section>
+
+  <section id="kotoba">
+    <h2>ことばの部屋</h2>
+    <div class="poem-container">
+      <p>風がそっと　心を撫でる<br>
+      あたたかな記憶が　またひとつ<br>
+      今日の私を　やさしく包む</p>
+    </div>
   </section>
 
   <section id="contact">
     <h2>お問い合わせ</h2>
-    <p>準備中です。しばらくお待ちください。</p>
+    <form action="https://formspree.io/f/moqgykzv" method="POST">
+      <label for="name">お名前:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">メールアドレス:</label><br>
+      <input type="email" id="email" name="_replyto" required><br><br>
+      
+      <label for="message">メッセージ:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      
+      <button type="submit">送信</button>
+    </form>
+    <p>※外部サービス「Formspree」を使って送信されます。</p>
   </section>
 
   <footer>
