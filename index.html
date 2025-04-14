@@ -151,7 +151,20 @@ body {
       あたたかな記憶が　またひとつ<br>
       今日の私を　やさしく包む</p>
     </div>
-  </section>
+  
+  <div class="poem-container">
+    <p id="daily-quote" style="font-style: italic;"></p>
+  </div>
+  <script>
+    const quotes = [
+      "やさしさは 静かな強さ",
+      "誰かの心に そっと灯る言葉を",
+      "あしたの私に ひとつ花を"
+    ];
+    document.getElementById("daily-quote").textContent = quotes[Math.floor(Math.random() * quotes.length)];
+  </script>
+
+</section>
 
   <section id="contact">
     <h2>お問い合わせ</h2>
@@ -179,6 +192,7 @@ body {
     </p>
     <p>
       <a href="diary.html"><i class="fas fa-book-open"></i> 成長記録</a>
+      <a href="watched.html"><i class="fas fa-film"></i> 鑑賞記録ノート</a>
     </p>
   <p style="font-size: 0.85rem; color: #999; text-align: center;">
     今日も来てくれてありがとう。また、ここで会えると嬉しいな。
