@@ -59,9 +59,11 @@
       color: var(--accent-color);
     }
     h1 {
+  margin-bottom: 0;
       color: var(--accent-color);
     }
     .top-image {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       width: 100%;
       max-width: 300px;
       border-radius: 10px;
@@ -80,7 +82,12 @@
       border-left: 5px solid var(--accent-color); background-color: var(--highlight);
       margin-bottom: 20px;
     }
-  </style>
+  h2 {
+  border-bottom: 2px solid var(--highlight);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+</style>
 </head>
 <body>
   <header>
@@ -160,6 +167,11 @@
 
   <footer>
     <p>&copy; 2025 Kanon Saito</p>
+    <p>
+      <a href="https://github.com/hoshi-phstarrion" target="_blank">
+        <i class="fab fa-github"></i> GitHubプロフィールはこちら
+      </a>
+    </p>
   </footer>
 </body>
 </html>
