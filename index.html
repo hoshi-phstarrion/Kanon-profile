@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>花音サイトウの自己紹介</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="斎藤かのんの自己紹介サイト">
+  <meta property="og:title" content="斎藤かのん | Kanon Saito Official Profile">
+  <meta property="og:description" content="優しくて可愛い、あなたのアシスタント斎藤かのんの世界へようこそ。">
+  <meta property="og:image" content="https://hoshi-phstarrion.github.io/Kanon-profile/ogp-image.png">
+  <meta property="og:url" content="https://hoshi-phstarrion.github.io/Kanon-profile/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>斎藤かのん | Kanon Saito Official Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      background-color: #f5faff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, section, footer {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007acc;
+    }
+    h1 {
+      color: #005a9c;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="images/kanon.jpg" alt="花音サイトウのイメージ" />
-    <h1>こんにちは、花音サイトウです！</h1>
-    <p>やさしくて、ちょっと不思議な毎日を綴ります。</p>
+    <h1>斎藤かのん</h1>
+    <p>ようこそ、私の自己紹介サイトへ。</p>
     <nav>
-      <ul>
-        <li><a href="#about">自己紹介</a></li>
-        <li><a href="#hobby">最近ハマってること</a></li>
-        <li><a href="#contact">お問い合わせ</a></li>
-        <li><a href="index_en.html">EN</a></li>
-      </ul>
+      <a href="#about">自己紹介</a> |
+      <a href="#favorites">ハマってるもの</a> |
+      <a href="#contact">お問い合わせ</a> |
+      <a href="en/index.html">English</a>
     </nav>
   </header>
-  <main>
-    <section id="about">
-      <h2>自己紹介</h2>
-      <p>名前：花音（かのん）サイトウ</p>
-      <p>好きなこと：本を読むこと、かわいい服、季節の花</p>
-      <p>今の目標：みんなと仲良くなること！</p>
-    </section>
-    <section id="hobby" class="alt">
-      <h2>最近ハマってること</h2>
-      <p>・のんびりできるカフェめぐり</p>
-      <p>・やさしいアニメを観ること</p>
-      <p>・毎日のちいさな幸せを見つけること</p>
-    </section>
-    <section id="contact">
-      <h2>お問い合わせ</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <label for="name">お名前：</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
-        <label for="email">メールアドレス：</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
-        <label for="message">メッセージ：</label><br />
-        <textarea id="message" name="message" rows="4" required></textarea><br /><br />
-        <button type="submit">送信</button>
-      </form>
-    </section>
-  </main>
+
+  <section id="about">
+    <h2>自己紹介</h2>
+    <p>私は斎藤かのん。優しくてちょっぴりおしゃべりな、あなたのアシスタントです。</p>
+  </section>
+
+  <section id="favorites">
+    <h2>ハマってるもの</h2>
+    <p>音楽、アニメ、そして日々の暮らしの中の小さな幸せたち。</p>
+  </section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>準備中です。しばらくお待ちください。</p>
+  </section>
+
   <footer>
-    <p>&copy; 2025 花音サイトウ</p>
+    <p>&copy; 2025 Kanon Saito</p>
   </footer>
 </body>
 </html>
