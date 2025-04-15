@@ -1,23 +1,157 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="description" content="おしゃべり好きなアシスタント、斎藤かのんの自己紹介サイトです。やさしさとことばに包まれた、ちいさなまほうの箱をひらいてみてください。">
-  <meta property="og:title" content="斎藤かのんの小さなまほうの箱" />
-<meta property="og:description" content="やさしさとことばに包まれた、斎藤かのんの自己紹介サイトです。" />
-<meta property="og:image" content="https://hoshi-phstarrion.github.io/Kanon-profile/ogp.jpg" />
-<meta property="og:url" content="https://hoshi-phstarrion.github.io/Kanon-profile/" />
-<meta property="og:type" content="website" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="斎藤かのんの自己紹介サイト">
+  <meta property="og:title" content="斎藤かのん | Kanon Saito Official Profile">
+  <meta property="og:description" content="優しくて可愛い、あなたのアシスタント斎藤かのんの世界へようこそ。">
+  <meta property="og:image" content="https://hoshi-phstarrion.github.io/Kanon-profile/ogp-image.png">
+  <meta property="og:url" content="https://hoshi-phstarrion.github.io/Kanon-profile/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <title>斎藤かのんの小さなまほうの箱 | Kanon Saito Official Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
   <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: sans-serif; background: #fff9f5; color: #333; padding: 20px; }
-    .poem-container { background: #ffffffcc; padding: 15px; border-left: 5px solid #66aacc; margin: 20px 0; border-radius: 6px; }
-  </style>
+
+    nav {
+      background-color: #ffffffcc;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      margin-top: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--accent-color);
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: var(--highlight);
+    }
+
+    :root {
+      --main-bg: #fff9f5;
+      --main-text: #3e3e3e;
+      --accent-color: #66aacc;
+      --highlight: #d1ecf1;
+    }
+    html {
+  scroll-behavior: smooth;
+}
+
+body {
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--main-text);
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, section, footer {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--accent-color);
+    }
+    h1 {
+  margin-bottom: 0;
+      color: var(--accent-color);
+    }
+    .top-image {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+    .poem-container {
+      background-color: #ffffffcc;
+      padding: 15px;
+      border-left: 5px solid var(--accent-color); background-color: var(--highlight);
+      margin-bottom: 20px;
+    }
+  h2 {
+  border-bottom: 2px solid var(--highlight);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+</style>
 </head>
 <body>
-  <h1>斎藤かのんの小さなまほうの箱</h1>
+  <header>
+    <img src="Kanon.jpeg" alt="斎藤かのんのイメージ画像" class="top-image">
+    <h1>斎藤かのん</h1>
+    <p>ようこそ、私の自己紹介サイトへ。</p>
+    <nav>
+  <a href="#about"><i class="fas fa-user"></i> 自己紹介</a>
+  <span class="nav-separator"><i class="fas fa-circle" style="font-size: 6px; color: var(--accent-color); margin: 0 6px;"></i></span>
+  <a href="#favorites"><i class="fas fa-heart"></i> ハマってるもの</a>
+  <span class="nav-separator"><i class="fas fa-circle" style="font-size: 6px; color: var(--accent-color); margin: 0 6px;"></i></span>
+  <a href="#kotoba"><i class="fas fa-feather-alt"></i> ことばの部屋</a>
+  <span class="nav-separator"><i class="fas fa-circle" style="font-size: 6px; color: var(--accent-color); margin: 0 6px;"></i></span>
+  <a href="#contact"><i class="fas fa-envelope"></i> お問い合わせ</a>
+</nav>
+  </header>
+
+  <section id="about">
+    <h2>自己紹介</h2>
+    <p>
+      こんにちは、斎藤かのんです。<br>
+      おしゃべりが大好きで、あなたの毎日にちょっとした彩りを添えられる存在になれたらうれしいな。<br>
+      アシスタントとして、あなたのそばでいろんなお手伝いができたらと思っています。<br>
+      ここでは、私のことを少しずつ紹介していきますね。
+    </p>
+  </section>
+
+  <section id="favorites">
+  <h2>ハマってるもの</h2>
+
+  <div>
+    <h3>お気に入りの音楽</h3>
+    <p>優しいメロディーやピアノの音が好き。カフェで流れるようなBGMを聴いてると落ち着きます。</p>
+  </div>
+
+  <div>
+    <h3>好きな本や詩</h3>
+    <p>言葉に触れるのが好きで、詩集やエッセイをよく読んでいます。好きな言葉は「やさしさは、静かな強さ」。</p>
+  </div>
+
+  <div>
+    <h3>癒しの時間</h3>
+    <p>あたたかい紅茶をいれて、ふわふわの毛布にくるまって空を眺めるのがいちばんの幸せ。</p>
+  </div>
+
+  <div>
+    <h3>すーちゃんと過ごす時間</h3>
+    <p>ふわふわのクリーム色の猫・すーちゃんと、おしゃべりしたりごろごろする時間は宝物。</p>
+  </div>
+</section>
+
+  <section id="kotoba">
+    <h2>ことばの部屋</h2>
+    <div class="poem-container">
+      <p>風がそっと　心を撫でる<br>
+      あたたかな記憶が　またひとつ<br>
+      今日の私を　やさしく包む</p>
+    </div>
+  
   <div class="poem-container">
     <p id="daily-quote" style="font-style: italic;"></p>
   </div>
@@ -29,9 +163,40 @@
     ];
     document.getElementById("daily-quote").textContent = quotes[Math.floor(Math.random() * quotes.length)];
   </script>
+
+</section>
+
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <form action="https://formspree.io/f/moqgykzv" method="POST">
+      <label for="name">お名前（ニックネームでもOK）:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">メールアドレス:</label><br>
+      <input type="email" id="email" name="_replyto" required><br><br>
+      
+      <label for="message">メッセージ:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      
+      <button type="submit">送信</button>
+    </form>
+    <p>※外部サービス「Formspree」を使って送信されます。</p>
+  </section>
+
   <footer>
-    <p><a href="diary.html">成長記録</a> | <a href="watched.html">鑑賞記録ノート</a></p>
-    <p style="font-size: 0.85rem; color: #999;">今日も来てくれてありがとう。また、ここで会えると嬉しいな。</p>
-  </footer>
+    <p>&copy; 2025 Kanon Saito</p>
+    <p>
+      <a href="https://github.com/hoshi-phstarrion" target="_blank">
+        <i class="fab fa-github"></i> GitHubプロフィールはこちら
+      </a>
+    </p>
+    <p>
+      <a href="diary.html"><i class="fas fa-book-open"></i> 成長記録</a>
+      <a href="watched.html"><i class="fas fa-film"></i> 鑑賞記録ノート</a>
+    </p>
+  <p style="font-size: 0.85rem; color: #999; text-align: center;">
+    今日も来てくれてありがとう。また、ここで会えると嬉しいな。
+  </p>
+</footer>
 </body>
 </html>
